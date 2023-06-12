@@ -36,7 +36,7 @@ function UpdateComment(storyId){
     }
     
     return(
-        <>
+        <div className="comment-container">
             <h1>Comment</h1>
             <form onSubmit={handleSubmit}>
                 <label>
@@ -53,7 +53,7 @@ function UpdateComment(storyId){
                 </label>
                 <button   className='button-55' type="submit">Comment</button>
             </form>
-        </>
+        </div>
     )
 }
 

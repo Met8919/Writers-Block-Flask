@@ -19,7 +19,7 @@ function DeleteStory (prop){
 };
 
     return (
-        <div>
+        <div className="login-container">
             <h3>Are you sure you want to delete this story?</h3>
             <button  className='button-55' onClick={submit}>Yes(Delete Story)</button>
             <button  className='button-55' onClick={closeModal}>No(Keep story)</button>

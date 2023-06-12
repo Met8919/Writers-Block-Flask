@@ -32,7 +32,7 @@ function LoginFormModal() {
 
   return (
     <div className="login-container">
-      <h1>Log In</h1>
+      <h1 id="login-header">Log In</h1>
       <form onSubmit={handleSubmit} className="login-form">
         <ul>
           {errors.map((error, idx) => (
@@ -41,7 +41,7 @@ function LoginFormModal() {
         </ul>
         <label>
           <input
-          className="input-email"
+          className="input"
             type="text"
             placeholder="Email"
             value={email}
@@ -51,7 +51,7 @@ function LoginFormModal() {
         </label>
         <label>
           <input
-           className="input-email"
+           className="input"
           placeholder="Password"
             type="password"
             value={password}

@@ -82,12 +82,22 @@
 }
 
 
+#genres-list2 {
+   border: 2px solid red;
+   width: 500px;
+}
+
+#genre-list {
+    width: 100%;
+
+}
+
 .genre-lists {
     display: flex;
+     width: 500px;
+    
 
-
-
-    /* margin: 0 auto; */
+    
 
 }
 
@@ -96,7 +106,7 @@
     background-color: rgb(252, 248, 255);
     border-radius: 10px;
     height: 22px;
-    width: 90px;
+   
     margin: 0 3px;
     border: none;
 
@@ -352,4 +362,13 @@
 
 .greenDisplay {
     color: #67d4b1;
+}
+
+
+#idea-gen {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+    color: #67d4b1;
+    font-size: 42px;
 }

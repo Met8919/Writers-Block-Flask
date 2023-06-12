@@ -13,7 +13,7 @@ function DelelteAComment(storyId){
         closeModal();
     }
     return (
-        <div>
+    <div className="comment-container">
         <h1>Confirm Delete</h1>
         <h3>Are you sure you want to delete this Comment?</h3>
         <button  className='button-55'

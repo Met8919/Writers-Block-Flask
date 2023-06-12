@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import SignupFormPage from "./components/SignupFormPage";
 import LoginFormPage from "./components/LoginFormPage";
@@ -13,21 +13,33 @@ import StoryForm from "./components/StoryForm/storyForm";
 import UpdateStoryForm from "./components/UpdateStoryForm/updateStoryForm";
 import UsersProfile from "./components/ProfilePage/otherUser";
 import ScrollToTopButton from "./components/ScrollUp/scrolltoTop";
+import SplashPage from "./components/SplashPage/SplashPage";
+import About from "./components/About/About";
 
 
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
 
+  const user = useSelector(state => state.session.user)
+
   useEffect(() => {
     dispatch(authenticate()).then(() => setIsLoaded(true));
   }, [dispatch]);
+
+
+ 
 
 
 
 
   return (
     <>
+      {!user && <SplashPage />}
+
+      { user &&
+      
+      <>
       <NavBar />
       <div className="page-body">
         <div className="side-bar-cont">
@@ -62,6 +74,9 @@ function App() {
               <Route  path='/:userId/profile'>
                 <UsersProfile />
               </Route>
+              <Route path='/about'>
+                <About />
+              </Route>
               <Route>
               <div>
                 <h1>404 Error</h1>
@@ -72,6 +87,9 @@ function App() {
           )}
         </div>
       </div>
+      
+      </>}
+
     </>
   );
 }

@@ -191,8 +191,8 @@ export default function UpdateStoryForm() {
             <label>Title   </label>
             <input required value={title} placeholder="" onChange={(e) => setTitle(e.target.value)} />
 
-            <div id="genres-list2">
-            <div className="genre-lists">
+            
+            
                 <div id="genre-label">Genres</div>
                 <div id="genre-list">
 
@@ -214,10 +214,8 @@ export default function UpdateStoryForm() {
 
 
 
-            </div>
 
 
-            </div>
 
             <div className="story-form-upper">
             <label>Image</label>
@@ -243,9 +241,9 @@ export default function UpdateStoryForm() {
 
         </form>
         <div  className="chat-box">
-
+        <h1 id="idea-gen">Idea Generator</h1>
 <div className="chat-display">
-    <p id="place-holder">Stuck? Ask me anything! (Write me a short funny story.)</p>
+    <p id="place-holder">Stuck? Ask me anything in the box below! (Write me a short funny story.)</p>
     {Object.values(chatDisplay.slice(1)).map(msg => (
         <p className={msg.role}>{msg.content}</p>
     ))}

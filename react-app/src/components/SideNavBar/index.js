@@ -43,6 +43,12 @@ function SideNavBar({ user }) {
        history.push('/')
     }
 
+    const toAbout = () => {
+
+      history.push('/about')
+
+    }
+
     const toProfilePage = () => { 
       history.push('/profile')
     }
@@ -60,14 +66,14 @@ function SideNavBar({ user }) {
     return (
         <div className='main-side-navbar'>
           <ul className="options-list">
-            <li onClick={toHomePage} ref={ulRef} className="row">
+            {/* <li onClick={toHomePage} ref={ulRef} className="row">
               <div id="icon">
                 <i className="fa-sharp fa-solid fa-house" />
               </div>
               <div id="text">
                 Home
               </div>
-            </li>
+            </li> */}
             {user ? (
               <>
                 <li className='row' onClick={toCreateStory}>
@@ -86,6 +92,21 @@ function SideNavBar({ user }) {
                   Profile
                   </div>
                 </li>
+
+
+
+                
+                <li className='row' onClick={toAbout}>
+                  <div id="icon">
+                  <i class="fas fa-exclamation-circle"/>
+                  </div>
+                  <div id="text">
+                    About
+                  </div>
+                </li>
+
+               
+
                 <li className='row' onClick={handleLogout}>
                   <div id="icon">
                     <i className="fa-solid fa-right-from-bracket" />

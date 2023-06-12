@@ -92,11 +92,11 @@ function UsersProfile(){
     if(!currentUser || !currentUser.stories )return <h1>Something went wrong, refresh</h1>
     
     return (
-        <div>
-        <h1>{currentUser.username} profile</h1>
+        <div className="profile-container">
+        <h1 >{currentUser.username} profile</h1>
         {replaceIconIfNull()}
         {followedOrNot()}
-        <h3>{currentUser.firstname} {currentUser?.lastname}</h3>
+        <h3 id="name">{currentUser.firstname} {currentUser?.lastname}</h3>
         <h3>Email: {currentUser.email}</h3>
         <h3>Bio: {currentUser.bio}</h3>
         <h4>{openFollowerModal()}{openFolloingModal()}</h4>

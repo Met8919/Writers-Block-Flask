@@ -109,12 +109,12 @@ function ProfilePage(){
         <div className="profile-container">
         <h1>Your Profile</h1>
         {replaceIconIfNull()}  
-        <h3>{currentUser?.firstname} {currentUser?.lastname}</h3>
+        <h3 id="name">{currentUser?.firstname} {currentUser?.lastname}</h3>
         <h3>Email: {currentUser?.email}</h3>
         <h3>Bio: {currentUser?.bio}</h3>
         <h4>{openFollowerModal()} {openFolloingModal()}</h4>
         <div className='navbar-in-profile'>
-        <button className={toggleStory ? 'button-56 active' : 'button-56'} onClick={clickStory}>Story</button>
+        <button className={toggleStory ? 'button-56 active' : 'button-56'} onClick={clickStory}>Stories</button>
       <button className={toggleComment ? 'button-56 active' : 'button-56'} onClick={clickComment}>Comments</button>
         </div>
         <div className="profile-content-cards">
