@@ -4,7 +4,7 @@
 
 ## [Live Site](https://writers-block-ycmn.onrender.com/)
 
-<img width='742' src='https://i.ibb.co/7b32Wg5/writers.png'>
+<img width='742' src='https://i.ibb.co/3R8Tzws/writers2.png'>
 
 
 
