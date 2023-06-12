@@ -33,7 +33,7 @@ export default function SplashPage() {
             <img onClick={toHome} alt='icon' className='splash-image' src={logo}></img>
             <p>Welcome to Writer's Block. Create read and share short stories.</p>
           
-                <div className='login-signup-container'>
+                <div className='login-signup-container button-55'>
 
                 <OpenModalMenuItem
                   className='nav-row'
@@ -43,7 +43,7 @@ export default function SplashPage() {
                   />
                 </div>
               
-                <div className='login-signup-container'>
+                <div className='login-signup-container button-55'>
 
                   <OpenModalMenuItem
                   className='nav-row'

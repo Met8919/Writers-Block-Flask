@@ -41,6 +41,10 @@
 
 }
 
+.button-56:hover {
+    color: #67d4b1;
+}
+
 .story-form-upper {
     display: flex;
     justify-content: flex-start;

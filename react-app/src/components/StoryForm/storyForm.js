@@ -232,7 +232,7 @@ export default function UpdateStoryForm() {
             ))}
         </div>
         <textarea className="chat-input"  value={chatInput} onChange={(e) => setChatInput(e.target.value)}></textarea>
-        <button id="chat-button" className="button-56" onClick={(e) => submitChat(e)}>Send</button>
+        <button id="chat-button" className="button-56 " onClick={(e) => submitChat(e)}>Send</button>
 
         </div>
     </div>
