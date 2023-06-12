@@ -31,7 +31,7 @@ export default function SplashPage() {
 
         <div className='splash-container'>
             <img onClick={toHome} alt='icon' className='splash-image' src={logo}></img>
-            <p>Welcome to Writer's Block. Create read and share short stories.</p>
+            <p>Welcome to Writer's Block, a place to create, read, and share short stories.</p>
           
                 <div className='login-signup-container button-55'>
 
